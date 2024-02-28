@@ -4,7 +4,7 @@ import CountryLookup from './CountryLookup'
 function Footer() {
   return (
    <>
-    <footer className='absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full'>
+    <footer className='absolute bottom-0 text-sm text-gray-500 bg-[#f2f2f2] w-full mt-3'>
         <div className="border-b px-8 py-3">
             <CountryLookup/>
         </div>
@@ -13,7 +13,7 @@ function Footer() {
                 <li className='hover:underline cursor-pointer'>About</li>
                 <li className='hover:underline cursor-pointer'>Blogs</li>
                 <li className='hover:underline cursor-pointer'>Advertise</li>
-                <li className='hover:underline cursor-pointer'>How search work</li>
+                <li className='hover:underline cursor-pointer'>search</li>
                 <li className='hover:underline cursor-pointer'>Contact</li>
             </ul>
             <ul className='flex items-center space-x-5'>

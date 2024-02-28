@@ -11,14 +11,16 @@ function SearchHeader() {
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center justify-between">
         <Link href={"/"}>
-          <Image
+         <div className="w-20 sm:w-40">
+         <Image
             src="https://www.nextg.cz/wp-content/uploads/2022/10/nG_logo-1.jpg"
             alt="nextg logo"
             height={100}
-            width={120}
+            width={100}
             priority
             style={{ width: "auto" }}
           />
+         </div>
         </Link>
 
         <div className="flex-1">
@@ -30,7 +32,7 @@ function SearchHeader() {
             <TbGridDots className="bg-transparent hover:bg-gray-200 p-2 text-5xl rounded-full cursor-pointer"/>
         </div>
 
-        <button className="bg-red-500 text-white px-5 py-2 font-medium rounded-md 
+        <button className="bg-red-500 hidden md:inline-flex text-white px-5 py-2 font-medium rounded-md 
                             hover:brightness-105 hover:shadow-lg transition-shadow ml-5">
           Sign in
         </button>

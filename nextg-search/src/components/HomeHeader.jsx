@@ -15,7 +15,7 @@ function HomeHeader() {
           Images
         </Link>
 
-        <FaFlask className="bg-transparent hover:bg-gray-300 rounded-full text-4xl p-2" />
+        <FaFlask className="bg-transparent hidden md:inline-flex hover:bg-gray-300 rounded-full text-4xl p-2" />
 
         <TbGridDots className="bg-transparent hover:bg-gray-300 rounded-full text-5xl p-3" />
         

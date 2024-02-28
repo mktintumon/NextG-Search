@@ -6,19 +6,22 @@ function CountryLookup() {
     const [country, setCountry] = useState('India');
     const [state, setState] = useState('Karnataka');
 
-    useEffect(() => {
-        const getCountry = async () => {
-            const response = await fetch('http://ip-api.com/json/')
-                                .then((res) => res.json())
-                                .then((data) => data)
+    // useEffect(() => {
+    //     const getCountry = async () => {
+    //         const response = await fetch('http://ip-api.com/json/')
+    //                             .then((res) => res.json())
+    //                             .then((data) => data)
 
-            if(!response) return;
+    //         if(!response){
+    //           setCountry("India")
+    //           setState("Karnataka")
+    //         }
 
-            setState(response.regionName)
-            setCountry(response.country)
-        }
-        getCountry()
-    },[])
+    //         setState(response.regionName)
+    //         setCountry(response.country)
+    //     }
+    //     getCountry()
+    // },[])
 
   return (
     <>
