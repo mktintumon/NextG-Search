@@ -10,7 +10,7 @@ function Error({error , reset}) {
   return (
     <div className='flex flex-col justify-center items-center pt-10'>
         <h1 className='text-3xl mb-4'>Something went wrong!</h1>
-        <button className='text-red-500 text-2xl hover:underline'>Try again</button>
+        <button className='text-red-500 text-2xl'>Try again</button>
     </div>
   )
 }
