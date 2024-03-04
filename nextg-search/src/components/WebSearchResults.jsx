@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Parser from 'html-react-parser'
+import PaginationButtons from './PaginationButtons'
 
 function WebSearchResults({results}) {
   return (
@@ -27,6 +28,8 @@ function WebSearchResults({results}) {
                 </div>
             ))
         }
+
+        <PaginationButtons/>
     </div>
   )
 }
