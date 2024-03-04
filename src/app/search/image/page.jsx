@@ -1,6 +1,6 @@
 import ImageSearchresults from "@/components/ImageSearchresults";
 import Link from "next/link";
-import React from "react";
+import React, { Suspense } from "react";
 
 async function ImageSearchPage({searchParams}) {
   const startIndex = searchParams.start || '1';
@@ -33,7 +33,9 @@ async function ImageSearchPage({searchParams}) {
 
   return (
     <>
+    <Suspense>
       { results && <ImageSearchresults results={data}/>}
+    </Suspense>
     </>
   )
 }
